@@ -4,7 +4,7 @@
  * @s: first arguemnt passed
  * Return: totalLength, the total number of characters printed
  */
-int _printf(const char *format, ...)
+int _printf(const char *s, ...)
 {
 	int count, finalLength = 0;
 	va_list printList;
@@ -15,7 +15,7 @@ int _printf(const char *format, ...)
 	{
 		if (s[count] != '%') /*prints out every index of s*/
 		{
-			putchar(s[count]);
+			_putchar(s[count]);
 			finalLength++;
 		}
 		if (s[count] == '%') /*calls function that prints argument*/
@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 					s[count + 1] != 'i' && s[count + 1] != 'b' &&
 					s[count + 1] != 'r' && s[count + 1] != 'R')
 			{
-				putchar(s[count]);
+				_putchar(s[count]);
 				finalLength++;
 			}
 			else

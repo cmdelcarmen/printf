@@ -1,3 +1,4 @@
+#include "holberton.h"
 /**
  * reverse_mod - function prints string backwards
  * @string: string passed to be printed
@@ -6,8 +7,7 @@
  */
 int reverse_mod(char *string, int finalLength)
 {
-	int count, newSpot, oldSpot, arrayLength = 0;
-	char sub;
+	int count, newSpot, arrayLength = 0;
 
 	for (count = 0; string[count] != '\0'; count++)
 	{
@@ -18,7 +18,7 @@ int reverse_mod(char *string, int finalLength)
 
 	for (count = newSpot; count >= 0; count--)
 	{
-		putchar(string[count]);
+		_putchar(string[count]);
 	}
 
 	return (finalLength);
@@ -57,7 +57,7 @@ int rot_mod(char *string, int finalLength)
 		{
 			if (string[count] == upper[count2])
 			{
-				putchar(lower[count2]);
+				_putchar(lower[count2]);
 				break;
 			}
 		}

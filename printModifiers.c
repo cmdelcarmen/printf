@@ -12,8 +12,8 @@ int string_mod(char *string, int finalLength)
 
 	for (count = 0; string[count] != '\0'; count++)
 	{
-		putchar(string[count]);
-		finalLength;
+		_putchar(string[count]);
+		finalLength++;
 	}
 
 	return (finalLength);
@@ -27,7 +27,7 @@ int string_mod(char *string, int finalLength)
  */
 int char_mod(int character, int finalLength)
 {
-	putchar(character);
+	_putchar(character);
 	return (finalLength);
 }
 
@@ -39,7 +39,7 @@ int char_mod(int character, int finalLength)
  */
 int int_mod(int integer, int finalLength)
 {
-	putchar(integer + 48);
+	_putchar(integer + 48);
 	return (finalLength);
 }
 
@@ -63,7 +63,7 @@ int binary_mod(int integer, int finalLength)
 
 	for (count2 = count - 1; count2 >= 0; count2--)
 	{
-		putchar(binaryNum[count2] + 48);
+	_putchar(binaryNum[count2] + 48);
 	}
 	return (finalLength);
 }
