@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
-int _printf(const char *s, ...);
+int _printf(const char *format, ...);
 int printArgument(char stringMod, va_list printList, int finalLength);
 
 int string_mod(char *string, int finalLength);

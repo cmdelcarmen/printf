@@ -4,7 +4,7 @@
  * @s: first arguemnt passed
  * Return: totalLength, the total number of characters printed
  */
-int _printf(const char *s, ...)
+int _printf(const char *format, ...)
 {
 	int count, finalLength = 0;
 	va_list printList;
