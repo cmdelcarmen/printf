@@ -10,6 +10,11 @@ int string_mod(char *string, int finalLength)
 {
 	int count;
 
+	if (string == NULL)
+	{
+		string = "(null)";
+	}
+
 	for (count = 0; string[count] != '\0'; count++)
 	{
 		_putchar(string[count]);
