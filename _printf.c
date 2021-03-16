@@ -20,7 +20,12 @@ int _printf(const char *s, ...)
 	firstArgumentLength = getLengthOfFirstArg(s);
 	if (firstArgumentLength == 1 && s[0] == '%')
 	{
-		return(-1);
+		return (-1);
+	}
+	if (firstArgumentLength == 3 && s[0] == '%' && s[1] == '%' && s[2] == '%')
+	{
+		putchar('%');
+		return (-1);
 	}
 	for (n = 0; s[n] != '\0'; n++)
 	{
