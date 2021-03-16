@@ -29,9 +29,9 @@ int _printf(const char *s, ...)
 			_putchar(s[n]);
 			finalLength++;
 		}
-		if (s[n] == '%') /*calls function that prints argument*/
+		if (s[n] == '%' && printList != NULL) /*calls function that prints argument*/
 		{
-			if (s[n + 1] != 's' && s[n + 1] != 'c' && s[n + 1] != 'i' && s[n + 1] != 'b'
+			if (s[n + 1] != 's' && s[n + 1] != 'c' && s[n + 1] != 'i' && s[n + 1] != 'R'
 				&& s[n + 1] != 'd' && s[n + 1] != 'r' && s[n + 1] != '%')
 			{
 				_putchar(s[n]);
@@ -64,6 +64,12 @@ int printArgument(char stringMod, va_list printList, int finalLength)
 	{
 		if (stringMod == 's')
 		{
+			if (printList->fp_offset == 48)
+			{
+				putchar('%');
+				putchar('s');
+				return (finalLength);
+			}
 			finalLength = string_mod(va_arg(printList, char*), finalLength);
 		}
 		if (stringMod == 'c')
