@@ -39,16 +39,34 @@ int char_mod(int character, int finalLength)
  */
 int int_mod(int integer, int finalLength)
 {
-	_putchar(integer + 48);
+
+	if (integer < 0)
+	{
+		_putchar('-');
+		finalLength++;
+		integer = abs(integer);
+	}
+
+	if (integer > 9)
+	{
+		int digit = integer / 10;
+
+		integer -= 10 * digit;
+		int_mod(digit, finalLength);
+	}
+
+	_putchar(integer + '0');
+	finalLength++;
+
 	return (finalLength);
 }
 
 /**
- *  * binary_mod - function prints binary
- *   * @integer: char arguemnt passed to be printd
- *    * @finalLength: counts every character printed
- *     * Return: finalLength
- *      */
+ *  binary_mod - function prints binary
+ * @integer: char arguemnt passed to be printd
+ * @finalLength: counts every character printed
+ * Return: finalLength
+ */
 int binary_mod(int integer, int finalLength)
 {
 	int binaryNum[32];

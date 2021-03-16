@@ -26,7 +26,7 @@ int _printf(const char *s, ...)
 		if (s[count] == '%') /*calls function that prints argument*/
 		{
 			if (s[count + 1] != 's' && s[count + 1] != 'c' &&
-					s[count + 1] != 'i' && s[count + 1] != 'b' &&
+					s[count + 1] != 'i' && s[count + 1] != 'b' && s[count + 1] != 'd' &&
 					s[count + 1] != 'r' && s[count + 1] != 'R' && s[count + 1] != '%')
 			{
 				_putchar(s[count]);
