@@ -64,12 +64,6 @@ int printArgument(char stringMod, va_list printList, int finalLength)
 	{
 		if (stringMod == 's')
 		{
-			if (printList->fp_offset == 48)
-			{
-				putchar('%');
-				putchar('s');
-				return (finalLength);
-			}
 			finalLength = string_mod(va_arg(printList, char*), finalLength);
 		}
 		if (stringMod == 'c')
