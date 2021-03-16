@@ -69,7 +69,7 @@ int int_mod(int integer, int finalLength)
  */
 int binary_mod(int integer, int finalLength)
 {
-	int binaryNum[32];
+	int binaryNum[1000];
 	int count = 0, count2;
 
 	while (integer > 0)
