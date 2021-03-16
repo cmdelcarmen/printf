@@ -8,6 +8,7 @@
 int _printf(const char *s, ...);
 int printArgument(char stringMod, va_list printList, int finalLength);
 
+int getLengthOfFirstArg(const char *s);
 int string_mod(char *string, int finalLength);
 int char_mod(int character, int finalLength);
 int int_mod(int integer, int finalLength);

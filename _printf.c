@@ -6,7 +6,7 @@
  */
 int _printf(const char *s, ...)
 {
-	int n, finalLength = 0;
+	int n, firstArgumentLength, finalLength = 0;
 	va_list printList;
 
 	if (s == NULL)
@@ -17,6 +17,11 @@ int _printf(const char *s, ...)
 	if (printList == NULL)
 		return (-1);
 
+	firstArgumentLength = getLengthOfFirstArg(s);
+	if (firstArgumentLength == 1 && s[0] == '%')
+	{
+		return(-1);
+	}
 	for (n = 0; s[n] != '\0'; n++)
 	{
 		if (s[n] != '%') /*prints out every index of s*/
