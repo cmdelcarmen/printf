@@ -6,41 +6,45 @@
  */
 int _printf(const char *s, ...)
 {
-	int count, finalLength = 0;
+	int n, finalLength = 0;
 	va_list printList;
+
+	if (s == NULL)
+		return (-1);
 
 	va_start(printList, s);
 
-	for (count = 0; s[count] != '\0'; count++)
+	if (printList == NULL)
+		return (-1);
+
+	for (n = 0; s[n] != '\0'; n++)
 	{
-		if (s[count] != '%') /*prints out every index of s*/
+		if (s[n] != '%') /*prints out every index of s*/
 		{
-			_putchar(s[count]);
+			_putchar(s[n]);
 			finalLength++;
 		}
-		if (s[count] == '%' && s[count + 1] == '%')
+		if (s[n] == '%' && s[n + 1] == '%')
 		{
-			_putchar(s[count]);
+			_putchar(s[n]);
 			finalLength++;
 		}
-		if (s[count] == '%') /*calls function that prints argument*/
+		if (s[n] == '%') /*calls function that prints argument*/
 		{
-			if (s[count + 1] != 's' && s[count + 1] != 'c' &&
-					s[count + 1] != 'i' && s[count + 1] != 'b' && s[count + 1] != 'd' &&
-					s[count + 1] != 'r' && s[count + 1] != 'R' && s[count + 1] != '%')
+			if (s[n + 1] != 's' && s[n + 1] != 'c' && s[n + 1] != 'i' && s[n + 1] != 'b'
+				&& s[n + 1] != 'd' && s[n + 1] != 'r' && s[n + 1] != '%')
 			{
-				_putchar(s[count]);
+				_putchar(s[n]);
 				finalLength++;
 			}
 			else
 			{
-				finalLength = printArgument(s[count + 1], printList, finalLength);
-				count += 1;
+				finalLength = printArgument(s[n + 1], printList, finalLength);
+				n += 1;
 			}
 		}
 	}
 	va_end(printList);
-
 	return (finalLength);
 }
 
