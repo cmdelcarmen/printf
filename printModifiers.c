@@ -18,7 +18,6 @@ int string_mod(char *string, int finalLength)
 
 	return (finalLength);
 }
-
 /**
  * char_mod - function prints char
  * @character: char arguemnt passed to be printd
