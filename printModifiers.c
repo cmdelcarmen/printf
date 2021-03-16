@@ -43,7 +43,7 @@ int int_mod(int integer, int finalLength)
 	{
 		_putchar('-');
 		finalLength++;
-		integer = abs(integer);
+		integer = _abs(integer);
 	}
 
 	if (integer > 9)
