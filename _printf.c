@@ -22,11 +22,6 @@ int _printf(const char *s, ...)
 	{
 		return (-1);
 	}
-	if (firstArgumentLength == 3 && s[0] == '%' && s[1] == '%' && s[2] == '%')
-	{
-		putchar('%');
-		return (-1);
-	}
 	for (n = 0; s[n] != '\0'; n++)
 	{
 		if (s[n] != '%') /*prints out every index of s*/
@@ -53,6 +48,7 @@ int _printf(const char *s, ...)
 				n += 1;
 			}
 		}
+
 	}
 	va_end(printList);
 	return (finalLength);
