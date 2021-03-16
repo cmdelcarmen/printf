@@ -61,6 +61,10 @@ int rot_mod(char *string, int finalLength)
 				break;
 			}
 		}
+		if (upper[count2] == '\0')
+		{
+			_putchar(string[count]);
+		}
 	}
 
 	return (finalLength);
