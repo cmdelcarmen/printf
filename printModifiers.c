@@ -43,25 +43,30 @@ int char_mod(int character, int finalLength)
  */
 int int_mod(int integer, int finalLength)
 {
+	unsigned int number = 0;
+	int digit;
 
 	if (integer < 0)
 	{
 		_putchar('-');
 		finalLength++;
-		integer = _abs(integer);
+		number = (integer * -1);
 	}
-
-	if (integer > 9)
+	else
 	{
-		int digit = integer / 10;
-
-		integer -= 10 * digit;
-		int_mod(digit, finalLength);
+		number = integer;
 	}
 
-	_putchar(integer + '0');
-	finalLength++;
+	if (number > 9)
+	{
+		digit = number / 10;
 
+		number -= 10 * digit;
+		finalLength = int_mod(digit, finalLength);
+	}
+
+	_putchar(number + '0');
+	finalLength++;
 	return (finalLength);
 }
 
