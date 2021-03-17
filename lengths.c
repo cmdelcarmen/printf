@@ -2,6 +2,7 @@
  * getLengthOfFirstArg - function gets length of 1st arg
  * @s: first argument passed
  * Return: arrayLength, length of array
+ * Description: Lets know how long is the first argument
  */
 #include "holberton.h"
 
