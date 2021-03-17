@@ -4,6 +4,7 @@
  * @string: string passed to be printed
  * @finalLength: count every character printed
  * Return: finalLength
+ * Description: Lets reverse a string
  */
 int reverse_mod(char *string, int finalLength)
 {
