@@ -16,7 +16,6 @@ int int_mod(int integer, int finalLength);
 int binary_mod(int integer, int finalLength);
 int reverse_mod(char *string, int finalLength);
 int rot_mod(char *string, int finalLength);
-int convertIntToOctal(int integer, int finalLength);
 
 int _putchar(char c);
 int _abs(int r);

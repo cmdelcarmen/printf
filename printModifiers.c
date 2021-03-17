@@ -32,6 +32,7 @@ int string_mod(char *string, int finalLength)
 int char_mod(int character, int finalLength)
 {
 	_putchar(character);
+	finalLength++;
 	return (finalLength);
 }
 
