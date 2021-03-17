@@ -43,6 +43,7 @@ int char_mod(int character, int finalLength)
  * @integer: int arguemnt passed to be printd
  * @finalLength: counts every character printed
  * Return: finalLength
+ * Description: Print an integer number
  */
 int int_mod(int integer, int finalLength)
 {
