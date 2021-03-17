@@ -22,7 +22,7 @@ The program is designed to mimic printf abilities. It is capable of handling
 the 'c', 's', and 'i' arguments just like printf. It also always returns the length of
 the string printed as well. Below are some examples:
 
-Example:
+Example:  
 **len = printf("Let's try to printf a simple sentence.\n");**  
 **len2 = _printf("Let's try to printf a simple sentence.\n");**  
 **printf("Length:[%d, %i]\n", len, len2);**  
