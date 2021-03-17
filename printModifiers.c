@@ -79,6 +79,7 @@ int int_mod(int integer, int finalLength)
  * @integer: char arguemnt passed to be printd
  * @finalLength: counts every character printed
  * Return: finalLength
+ * Description: Print a binary number
  */
 int binary_mod(int integer, int finalLength)
 {
