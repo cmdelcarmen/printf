@@ -20,4 +20,4 @@ int rot_mod(char *string, int finalLength);
 int _putchar(char c);
 int _abs(int r);
 
-#endif
+#endif /* HOLBERTON_H */
