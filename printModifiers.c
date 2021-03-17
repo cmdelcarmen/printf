@@ -29,6 +29,7 @@ int string_mod(char *string, int finalLength)
  * @character: char arguemnt passed to be printd
  * @finalLength: counts every character printed
  * Return: finalLength
+ * Description: Print a character
  */
 int char_mod(int character, int finalLength)
 {
