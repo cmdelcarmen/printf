@@ -5,6 +5,7 @@
  * @string: string argument passed to be printed
  * @finalLength: counts every character printed
  * Return: finalLength
+ * Description: Print a pointer of characters
  */
 int string_mod(char *string, int finalLength)
 {
