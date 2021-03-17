@@ -30,6 +30,7 @@ int reverse_mod(char *string, int finalLength)
  * @string: string passed to be printed
  * @finalLength: count every character printed
  * Return: final length
+ * Description: Lets change some letters to rot13 mode
  */
 int rot_mod(char *string, int finalLength)
 {
