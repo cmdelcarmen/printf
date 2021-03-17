@@ -1,6 +1,6 @@
 .\" Manpage for nuseradd.
 .\" Contact vivek@nixcraft.net.in to correct errors or typos.
-.TH man 1 "14 MARCH 2020" "1.0" "_printf man page"
+.TH man 1 "14 MARCH 2021" "1.0" "_printf man page"
 
 .SH NAME
 
@@ -32,13 +32,6 @@ in fetching zero or more subsequent arguments.
 
 .B The flag characters
 
-The % character followed by zero or more of the followings flags:
-
-.B #
-The value should be converted to an "alternate form".
-
-.B 0
-The value should be zero padded.
 
 .B The field width
 
