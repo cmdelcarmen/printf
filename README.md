@@ -67,6 +67,10 @@ This file contains the functions to be verify by the modifiers 's', 'c', 'i' or 
 int string_mod(char *string, int finalLength);
 Takes a pointer of characters and print it out.
 
+int char_mod(int character, int finalLength);
+Print out the character passed to.
+
+int int_mod(int integer, int finalLength);
 
 E. **avPrintModifiers**  
 In this file we have functions that change a string pass to it. The functions are reverse_mod() and rot_mod().
