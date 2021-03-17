@@ -71,6 +71,10 @@ A '%' is written. No argument is converted. The complete conversion specificatio
 
 .B r
 Reverse the string passed (without the null byte).
+
+.B R
+Change the string to rot13 mode.
+
 .SH Conforming To
 
 
