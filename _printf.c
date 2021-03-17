@@ -56,6 +56,7 @@ int _printf(const char *s, ...)
  * @printList: list of arguments ot be printed
  * @finalLength: total numbre of charactes printed
  * Return: finalLength
+ * Description: Select the function to print based on the modifier
  */
 int printArgument(char stringMod, va_list printList, int finalLength)
 {
