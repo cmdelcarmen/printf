@@ -3,8 +3,8 @@ as part of our **printf** Holberton School Project.
 
 I. File List
 ------------
-holberton.h  
-- Header file. Contains libraries & prototypes.  
+- holberton.h  
+  - Header file. Contains libraries & prototypes.  
 printf.c  
 - Prints out string and calls appropiate functions for string modifiers.  
 lengths.c  
