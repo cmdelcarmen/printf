@@ -5,11 +5,16 @@ I. File List
 ------------
 holberton.h  
 - Header file. Contains libraries & prototypes.  
-printf.c				Prints out string and calls appropiate functions for string modifiers.  
-lengths.c				Gets the length of a string.
-functions.c			    Contains the putchar function written by holberton used to print out characters.  
-printModifiers.c		Contains the printing functions for c, s, i, and d string modifiers.  
-avPrintModifiers.c		Contains the printing functions for more advanced string modifiers.  
+printf.c  
+- Prints out string and calls appropiate functions for string modifiers.  
+lengths.c  
+- Gets the length of a string.  
+functions.c  
+- Contains the putchar function written by holberton used to print out characters.  
+printModifiers.c  
+- Contains the printing functions for c, s, i, and d string modifiers.  
+avPrintModifiers.c  
+- Contains the printing functions for more advanced string modifiers.  
 
 II. Design
 ----------
