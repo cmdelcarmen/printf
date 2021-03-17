@@ -78,7 +78,6 @@ int printArgument(char stringMod, va_list printList, int finalLength)
 		}
 		if (stringMod == 'b')
 		{
-			printf("arrived!\n");
 			finalLength = binary_mod(va_arg(printList, int), finalLength);
 		}
 		if (stringMod == 'r')
