@@ -96,6 +96,7 @@ int binary_mod(int integer, int finalLength)
 	for (count2 = count - 1; count2 >= 0; count2--)
 	{
 	_putchar(binaryNum[count2] + 48);
+	finalLength++;
 	}
 	return (finalLength);
 }
