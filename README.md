@@ -63,4 +63,12 @@ string. This value is then returned to _printf.
 
 D. **PrintfModifiers.c**  
 
+E. **avPrintModifiers**  
+In this file we have functions that change a string pass to it. The functions are reverse_mod() and rot_mod().
+
+int reverse_mod(char *string, int finalLength);
+Funtion that print a string in reverse, except for the null byte ('\0').
+
+int rot_mod(char *string, int finalLength);
+Function that change a string to a rot13 mode and print it out.
 
