@@ -18,6 +18,5 @@ int reverse_mod(char *string, int finalLength);
 int rot_mod(char *string, int finalLength);
 
 int _putchar(char c);
-int _abs(int r);
 
 #endif /* HOLBERTON_H */
