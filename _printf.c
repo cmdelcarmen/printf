@@ -3,6 +3,7 @@
  * _printf - function prints out string
  * @s: first arguemnt passed
  * Return: totalLength, the total number of characters printed
+ * Description: Our own printf funtion
  */
 int _printf(const char *s, ...)
 {
