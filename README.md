@@ -64,24 +64,24 @@ string. This value is then returned to _printf.
 D. **PrintfModifiers.c**  
 This file contains the functions to be verify by the modifiers 's', 'c', 'i' or 'd' and 'b'. The funtions are string_mod(), char_mod(), int_mod() and binary_mod().
 
-int string_mod(char \*string, int finalLength);
+int string_mod(char \*string, int finalLength);  
 Takes a pointer of characters and print it out.
 
-int char_mod(int character, int finalLength);
+int char_mod(int character, int finalLength);  
 Print out the character passed to.
 
-int int_mod(int integer, int finalLength);
+int int_mod(int integer, int finalLength);  
 Recieve an integer number and print it out.
 
-int binary_mod(int integer, int finalLength);
+int binary_mod(int integer, int finalLength);  
 Take an integer and print it out in binary mode.
 
 E. **avPrintModifiers**  
 In this file we have functions that change a string pass to it. The functions are reverse_mod() and rot_mod().
 
-int reverse_mod(char \*string, int finalLength);
+int reverse_mod(char \*string, int finalLength);  
 Funtion that print a string in reverse, except for the null byte ('\0').
 
-int rot_mod(char \*string, int finalLength);
+int rot_mod(char \*string, int finalLength);  
 Function that change a string to a rot13 mode and print it out.
 
