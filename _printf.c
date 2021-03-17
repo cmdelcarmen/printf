@@ -29,15 +29,15 @@ int _printf(const char *s, ...)
 			finalLength++; }
 		if (s[n] == '%' && s[n + 1] == '%')
 		{_putchar(s[n]);
-			finalLength++;
-		}
+			finalLength++; }
 		if (s[n] == '%' && s[n + 1] == '\0')
 			return (-1);
 
 		if (s[n] == '%' && printList != NULL) /*calls function that prints argument*/
 		{
-			if (s[n + 1] != 's' && s[n + 1] != 'c' && s[n + 1] != 'i' && s[n + 1] != 'R'
-					&& s[n + 1] != 'd' && s[n + 1] != 'r' && s[n + 1] != '%')
+			if (s[n + 1] != 's' && s[n + 1] != 'c' && s[n + 1] != 'i' &&
+					s[n + 1] != 'R' && s[n + 1] != 'd' && s[n + 1] != 'r' && s[n + 1] != '%'
+					&& s[n + 1] != 'b')
 			{_putchar(s[n]);
 				finalLength++; }
 			else
@@ -78,6 +78,7 @@ int printArgument(char stringMod, va_list printList, int finalLength)
 		}
 		if (stringMod == 'b')
 		{
+			printf("arrived!\n");
 			finalLength = binary_mod(va_arg(printList, int), finalLength);
 		}
 		if (stringMod == 'r')
