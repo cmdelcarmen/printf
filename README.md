@@ -62,6 +62,11 @@ Function takes the first arguement passed to our _printf function and gets the l
 string. This value is then returned to _printf.
 
 D. **PrintfModifiers.c**  
+This file contains the functions to be verify by the modifiers 's', 'c', 'i' or 'd' and 'b'. The funtions are string_mod(), char_mod(), int_mod() and binary_mod().
+
+int string_mod(char *string, int finalLength);
+Takes a pointer of characters and print it out.
+
 
 E. **avPrintModifiers**  
 In this file we have functions that change a string pass to it. The functions are reverse_mod() and rot_mod().
