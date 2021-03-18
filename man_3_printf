@@ -1,6 +1,6 @@
 .\" Manpage for _printf.
 .\" Contact 2709@holbertonschool.com or 2720@holbertonschool.com to correct errors or typos.
-.TH man 1 "14 MARCH 2021" "1.0" "_printf man page"
+.TH man 3 "14 MARCH 2021" "3.0" "_printf man page"
 
 .SH NAME
 
@@ -10,7 +10,7 @@ _printf \- Output Conversion
 
 #include "holberton.h"
 
-void _printf(char *format, ...);
+int _printf(char *format, ...);
 
 .SH DESCRIPTION
 
@@ -62,13 +62,23 @@ Reverse the string passed (without the null byte).
 
 Change the string to rot13 mode.
 
-.SH Conforming To
+.SH EXAMPLE
 
+#include "holberton.h"
 
+int main (void)
 
-.SH NOTES
+{
 
+	int ch;
 
+	for(ch = 65; ch <= 90; ch++)
+
+		_printf("ASCII value = %d, Character = %c\n", ch , ch );
+
+	return(0);
+
+}
 
 .SH BUGS
 
