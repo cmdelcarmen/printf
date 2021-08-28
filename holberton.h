@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
+#include <unistd.h>
 
 int _printf(const char *s, ...);
 int printArgument(char stringMod, va_list printList, int finalLength);
