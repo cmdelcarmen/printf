@@ -7,13 +7,11 @@ I. File List
   - Header file. Contains libraries & prototypes.  
 - printf.c  
   - Prints out string and calls appropiate functions for string modifiers.  
-- lengths.c  
-  - Gets the length of a string.  
-- functions.c  
-  - Contains the putchar function written by holberton used to print out characters.  
-- printModifiers.c  
+- printf_helper_functions.c  
+  - Contains helper functions.  
+- printf_modifiers.c  
   - Contains the printing functions for c, s, i, and d string modifiers.  
-- avPrintModifiers.c  
+- printf_modifiers_2.c  
   - Contains the printing functions for more advanced string modifiers.  
 
 II. Design
@@ -42,7 +40,7 @@ also listed here. Starting with our two mainly used onces, follows by a list of 
 functions we used to print out the special arguments.
 
 B. **_printf.c**  
-Contains two functions: _printf; and printfArugment;  
+Contains: _printf;
 
 int _printf(const char s[], ...);  
 This is our version of the printf function. It starts out with validating the input and then
@@ -50,18 +48,15 @@ creating a va_list of all the arguments passed. It then goes through a for loop 
 prints out the passed string or passed the string modifier to another function called
 printArgument;. Returns the length of the string.
 
+
+C. **printf_helper_functions.c**  
+Contains function printfArugment;  
+
 int printArgument(char, va_list, int);  
 This functin takes the string modifier, and uses it to call the appropiate printing function.
 It returns the length of the string.
 
-C. **Lengths.c**  
-Contains function getLengthOfFirstArg;  
-
-int getLengthOfFirstArg(const char s[])  
-Function takes the first arguement passed to our _printf function and gets the length of the
-string. This value is then returned to _printf.
-
-D. **PrintfModifiers.c**  
+D. **printf_modifiers.c**  
 This file contains the functions to be verify by the modifiers 's', 'c', 'i' or 'd' and 'b'. The funtions are string_mod(), char_mod(), int_mod() and binary_mod().
 
 int string_mod(char \*string, int finalLength);  
@@ -76,7 +71,7 @@ Recieve an integer number and print it out.
 int binary_mod(int integer, int finalLength);  
 Take an integer and print it out in binary mode.
 
-E. **avPrintModifiers**  
+E. **printf_modifiers_2**  
 In this file we have functions that change a string pass to it. The functions are reverse_mod() and rot_mod().
 
 int reverse_mod(char \*string, int finalLength);  
